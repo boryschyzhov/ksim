@@ -63,7 +63,6 @@ end
 
 <pre>
 to look-around-wolf
-  let vision-radius 2 
   let candidate-patches patches in-radius vision-radius with [ any? sheep-here and not any? wolves-here ]
   if any? candidate-patches [
     
@@ -73,4 +72,9 @@ to look-around-wolf
   ]
 end
 </pre>
+
+Також у інтерфейс моделі було додано слайдер із глобальною параметром vision-radius, який буде визначати скільки вовк буде бачити клітинок, коли оглядається.
+
+![Покращення інтерфейсу моделі](im3.png)
+
 
